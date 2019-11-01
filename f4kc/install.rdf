@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+
+    <em:id>keyconfig-functions@dorando</em:id>
+    <em:name>functions for keyconfig</em:name>
+    <em:version>1.3.8</em:version>
+    <em:description>functions for keyconfig extension.</em:description>
+    <em:creator>Takayama Fumihiko</em:creator>
+    <em:contributor>Onno Ekker</em:contributor>
+    <em:homepageURL>http://www.pqrs.org/~tekezo/firefox/extensions/functions_for_keyconfig/</em:homepageURL>
+
+    <!-- firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>55.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

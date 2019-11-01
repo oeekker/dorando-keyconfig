@@ -1,70 +1,82 @@
-<?xml version="1.0"?>
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://www.mozilla.org/2004/em-rdf#">
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <rdf:Description rdf:about="urn:mozilla:install-manifest">
-    <id>keyconfig@mozilla.dorando.at</id>
-    <name>Dorando keyconfig</name>
-    <version>2018.1</version>
-    <creator>Dorando</creator>
-    <contributor>Hadar Hagai</contributor>
-    <contributor>trlkly</contributor>
-    <contributor>Jonathan Kamens</contributor>
-    <translator>MatrixIsAllOver of eXtenZilla.it (it-IT)</translator>
-    <translator>Mori (fr-FR)</translator>
-    <translator>SHIMODA Hiroshi (ja-JP)</translator>
-    <translator>SlovakSoft (sk-SK)</translator>
-    <translator>Tomáš Kopečný (cs-CZ)</translator>
-    <translator>ReinekeFux - erweiterungen.de (de-DE)</translator>
-    <translator>stoneflash (ru-RU)</translator>
-    <translator>ZuGro (es-AR)</translator>
-    <translator>rexx26 (zh-TW)</translator>
-    <translator>kyo (ko-KR)</translator>
-    <translator>Cye3s (zh-CN)</translator>
-    <translator>Jørgen Rasmussen (da-DK)</translator>
-    <translator>Jack Black (fr-FR)</translator>
-    <homepageURL>http://mozilla.dorando.at/</homepageURL>
-    <description>Rebind your keys.</description>
-    <optionsURL>chrome://keyconfig/content/</optionsURL>
-    <optionsType>3</optionsType>
-    <type>2</type> <!-- type=extension -->
-    <multiprocessCompatible>true</multiprocessCompatible>
+    <em:id>keyconfig@mozilla.dorando.at</em:id>
+    <em:type>2</em:type> <!-- type=extension -->
+    <em:name>Dorando keyconfig</em:name>
+    <em:version>2019.1</em:version>
+    <em:creator>Dorando</em:creator>
+    <em:contributor>Hadar Hagai</em:contributor>
+    <em:contributor>trlkly</em:contributor>
+    <em:contributor>Jonathan Kamens</em:contributor>
+    <em:contributor>Onno Ekker</em:contributor>
+    <em:translator>MatrixIsAllOver of eXtenZilla.it (it)</em:translator>
+    <em:translator>Mori (fr)</em:translator>
+    <em:translator>SHIMODA Hiroshi (ja)</em:translator>
+    <em:translator>SlovakSoft (sk)</em:translator>
+    <em:translator>Tomáš Kopečný (cs)</em:translator>
+    <em:translator>ReinekeFux - erweiterungen.de (de)</em:translator>
+    <em:translator>stoneflash (ru)</em:translator>
+    <em:translator>ZuGro (es-AR)</em:translator>
+    <em:translator>rexx26 (zh-TW)</em:translator>
+    <em:translator>kyo (ko)</em:translator>
+    <em:translator>Cye3s (zh-CN)</em:translator>
+    <em:translator>Jørgen Rasmussen (da)</em:translator>
+    <em:translator>Jack Black (fr)</em:translator>
+    <em:homepageURL>http://mozilla.dorando.at/</em:homepageURL>
+    <em:description>Rebind your keys.</em:description>
+    <em:optionsURL>chrome://keyconfig/content/</em:optionsURL>
+    <em:optionsType>3</em:optionsType>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
 
-    <targetApplication><rdf:Description>
-      <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id> <!--Firefox-->
-      <minVersion>4.0</minVersion>
-      <maxVersion>56.*</maxVersion>
-    </rdf:Description></targetApplication>
+    <em:targetApplication>
+      <rdf:Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!--Firefox-->
+        <em:minVersion>4.0</em:minVersion>
+        <em:maxVersion>56.*</em:maxVersion>
+      </rdf:Description>
+    </em:targetApplication>
 
-    <targetApplication><rdf:Description>
-      <id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</id> <!--Thunderbird-->
-      <minVersion>5.0b1</minVersion>
-      <maxVersion>61.0</maxVersion>
-    </rdf:Description></targetApplication>
+    <em:targetApplication>
+      <rdf:Description>
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id> <!--Thunderbird-->
+        <em:minVersion>5.0b1</em:minVersion>
+        <em:maxVersion>68.*</em:maxVersion>
+      </rdf:Description>
+    </em:targetApplication>
 
-    <targetApplication><rdf:Description>
-      <id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</id> <!--Firefox (Android)-->
-      <minVersion>10.0a1</minVersion>
-      <maxVersion>56.*</maxVersion>
-    </rdf:Description></targetApplication>
+    <em:targetApplication>
+      <rdf:Description>
+        <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id> <!--Firefox (Android)-->
+        <em:minVersion>10.0a1</em:minVersion>
+        <em:maxVersion>56.*</em:maxVersion>
+      </rdf:Description>
+    </em:targetApplication>
 
-    <targetApplication><rdf:Description>
-      <id>{a23983c0-fd0e-11dc-95ff-0800200c9a66}</id> <!--Mobile-->
-      <minVersion>4.0</minVersion>
-      <maxVersion>56.*</maxVersion>
-    </rdf:Description></targetApplication>
+    <em:targetApplication>
+      <rdf:Description>
+        <em:id>{a23983c0-fd0e-11dc-95ff-0800200c9a66}</em:id> <!--Mobile-->
+        <em:minVersion>4.0</em:minVersion>
+        <em:maxVersion>56.*</em:maxVersion>
+      </rdf:Description>
+    </em:targetApplication>
 
-    <targetApplication><rdf:Description>
-      <id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</id> <!--SeaMonkey-->
-      <minVersion>2.1</minVersion>
-      <maxVersion>2.49.*</maxVersion>
-    </rdf:Description></targetApplication>
+    <em:targetApplication>
+      <rdf:Description>
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id> <!--SeaMonkey-->
+        <em:minVersion>2.1</em:minVersion>
+        <em:maxVersion>2.49.*</em:maxVersion>
+      </rdf:Description>
+    </em:targetApplication>
 
-    <targetApplication><rdf:Description>
-      <id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</id> <!--Pale Moon-->
-      <minVersion>25.0</minVersion>
-      <maxVersion>27.*</maxVersion>
-    </rdf:Description></targetApplication>
+    <em:targetApplication>
+      <rdf:Description>
+        <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id> <!--Pale Moon-->
+        <em:minVersion>25.0</em:minVersion>
+        <em:maxVersion>27.*</em:maxVersion>
+      </rdf:Description>
+    </em:targetApplication>
   </rdf:Description>
 </rdf:RDF>

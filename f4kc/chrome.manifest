@@ -1,0 +1,4 @@
+content functions_for_keyconfig content/
+overlay chrome://browser/content/browser.xul chrome://functions_for_keyconfig/content/overlay-browser.xul
+overlay chrome://browser/content/pageInfo.xul chrome://functions_for_keyconfig/content/overlay-pageinfo.xul
+overlay chrome://browser/content/viewSourceOverlay.xul chrome://functions_for_keyconfig/content/overlay-viewsource.xul

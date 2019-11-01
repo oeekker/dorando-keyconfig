@@ -3,9 +3,10 @@
 <?xml-stylesheet href="chrome://global/skin/"?>
 
 <!DOCTYPE dialog [
-<!ENTITY % keyconfig SYSTEM "chrome://keyconfig/locale/keyconfig.ent">
-<!ENTITY % textcontext SYSTEM "chrome://global/locale/textcontext.dtd">
-%keyconfig; %textcontext;
+  <!ENTITY % keyconfig SYSTEM "chrome://keyconfig/locale/keyconfig.dtd">
+  %keyconfig;
+  <!ENTITY % textcontext SYSTEM "chrome://global/locale/textcontext.dtd">
+  %textcontext;
 ]>
 
 <dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -87,4 +88,4 @@ if(gPrefService.getPrefType("browser.backspace_action"))
  <key id="key_copy" label="&copyCmd.label;" modifiers="accel" key="c" oncommand="copyKey();"/>
 </keyset>
 
-</dialog> 
+</dialog>

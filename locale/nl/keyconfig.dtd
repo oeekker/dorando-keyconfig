@@ -1,0 +1,17 @@
+<!ENTITY keyconfig.title "Keyconfig">
+<!ENTITY keyconfig.label "Keyconfig…">
+<!ENTITY keyconfig.accesskey "k">
+<!ENTITY keyconfig.apply "Toepassen">
+<!ENTITY keyconfig.reset "Herinitialiseren">
+<!ENTITY keyconfig.keyid "Naam">
+<!ENTITY keyconfig.keys "Sneltoets">
+<!ENTITY keyconfig.disable "Uitschakelen">
+<!ENTITY keyconfig.unrecognized "&lt;$1>">
+<!ENTITY keyconfig.used "Deze sneltoets wordt al gebruikt door:\n$1\n\nHet is mogelijk dat hij toch werkt.">
+<!ENTITY keyconfig.close "Sluiten">
+<!ENTITY keyconfig.onreset "Herstart vereist">
+<!ENTITY keyconfig.add "Een nieuwe toets toevoegen">
+<!ENTITY keyconfig.edit "Deze toets bewerken">
+<!ENTITY keyconfig.global "Globaal">
+<!ENTITY keyconfig.editor "Keyconfig - Toetseditor">
+<!ENTITY keyconfig.disabled "&lt;Uitgeschakeld>">

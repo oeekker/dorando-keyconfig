@@ -1,18 +1,21 @@
 content keyconfig content/
-content keyconfig-defaults defaults/
+content functions_for_keyconfig content/
+
 locale  keyconfig en-US locale/en-US/
-locale  keyconfig cs-CZ locale/cs-CZ/
-locale  keyconfig da-DK locale/da-DK/
-locale  keyconfig de-DE locale/de-DE/
+locale  keyconfig cs    locale/cs/
+locale  keyconfig da    locale/da/
+locale  keyconfig de    locale/de/
 locale  keyconfig es-AR locale/es-AR/
-locale  keyconfig fr-FR locale/fr-FR/
-locale  keyconfig it-IT locale/it-IT/
-locale  keyconfig ja-JP locale/ja-JP/
-locale  keyconfig ko-KR locale/ko-KR/
-locale  keyconfig ru-RU locale/ru-RU/
-locale  keyconfig sk-SK locale/sk-SK/
+locale  keyconfig fr    locale/fr/
+locale  keyconfig it    locale/it/
+locale  keyconfig ja    locale/ja/
+locale  keyconfig ko    locale/ko/
+locale  keyconfig nl    locale/nl/
+locale  keyconfig ru    locale/ru/
+locale  keyconfig sk    locale/sk/
 locale  keyconfig zh-CN locale/zh-CN/
 locale  keyconfig zh-TW locale/zh-TW/
+
 skin    keyconfig classic/1.0 skin/
 
 overlay chrome://browser/content/browser.xul chrome://keyconfig/content/overlay.xul
@@ -20,6 +23,10 @@ overlay chrome://messenger/content/mailWindowOverlay.xul chrome://keyconfig/cont
 overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://keyconfig/content/overlay.xul
 overlay chrome://communicator/content/tasksOverlay.xul chrome://keyconfig/content/overlay.xul
 style   chrome://keyconfig/content/keyconfig.xul chrome://keyconfig/skin/keyconfig.css
+
+overlay chrome://browser/content/browser.xul chrome://functions_for_keyconfig/content/overlay-browser.xul
+overlay chrome://browser/content/pageInfo.xul chrome://functions_for_keyconfig/content/overlay-pageinfo.xul
+overlay chrome://browser/content/viewSourceOverlay.xul chrome://functions_for_keyconfig/content/overlay-viewsource.xul
 
 component {e9f7950e-d78d-4aaa-900a-c43588052eba} components/keyconfig-service.js
 contract @dorando.at/keyconfig;1 {e9f7950e-d78d-4aaa-900a-c43588052eba}

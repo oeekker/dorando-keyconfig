@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+
+<overlay id="functions_for_keyconfig_overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://functions_for_keyconfig/content/f4kc_utils.js" />
+  <script type="application/x-javascript" src="chrome://functions_for_keyconfig/content/f4kc_FocusNextFrame.js" />
+  <script type="application/x-javascript" src="chrome://functions_for_keyconfig/content/f4kc_UpperDirectory.js" />
+  <script type="application/x-javascript" src="chrome://functions_for_keyconfig/content/f4kc_ToggleCheckBox.js" />
+  <script type="application/x-javascript" src="chrome://functions_for_keyconfig/content/f4kc_CanonizeURL.js" />
+  <script type="application/x-javascript" src="chrome://functions_for_keyconfig/content/f4kc_misc.js" />
+
+  <window id="main-window">
+  <keyset >
+    <key id="f4kc_Back" oncommand="f4kc_Back();" key="q" modifiers="meta,alt" />
+    <key id="f4kc_Back2" oncommand="f4kc_Back();" key="p" modifiers="meta,alt" />
+    <key id="f4kc_BookmarkThisPage" oncommand="f4kc_BookmarkThisPage();" key="a" modifiers="meta,alt" />
+    <key id="f4kc_CompleteURL_com" oncommand="f4kc_CanonizeURL();" key="c" modifiers="accel,shift,meta,alt" />
+    <key id="f4kc_CompleteURL_net" oncommand="f4kc_CanonizeURL('.net/');" key="n" modifiers="accel,shift,meta,alt" />
+    <key id="f4kc_CompleteURL_org" oncommand="f4kc_CanonizeURL('.org/');" key="o" modifiers="accel,shift,meta,alt" />
+    <key id="f4kc_ClearHTTPAuth" oncommand="f4kc_ClearHTTPAuth();" key="c" modifiers="shift,meta,alt" />
+    <key id="f4kc_ClearJSConsole" oncommand="f4kc_ClearJSConsole();" key="c" modifiers="meta,alt" />
+    <key id="f4kc_CopyCurrentTitle" oncommand="f4kc_CopyCurrentTitle();" key="t" modifiers="meta,alt" />
+    <key id="f4kc_CopyCurrentURI" oncommand="f4kc_CopyCurrentURI();" key="y" modifiers="meta,alt" />
+    <key id="f4kc_Find" oncommand="f4kc_Find();" key="s" modifiers="accel,meta,alt" />
+    <key id="f4kc_FindNext" oncommand="f4kc_FindNext();" key="n" modifiers="accel,meta,alt" />
+    <key id="f4kc_FindPrevious" oncommand="f4kc_FindPrevious();" key="p" modifiers="accel,meta,alt" />
+    <key id="f4kc_FocusNextFrame" oncommand="f4kc_FocusNextFrame();" key="f" modifiers="meta,alt" />
+    <key id="f4kc_FocusURLBar" oncommand="f4kc_FocusURLBar();" key="u" modifiers="shift,meta,alt" />
+    <key id="f4kc_Forward" oncommand="f4kc_Forward();" key="]" modifiers="accel,meta,alt" />
+    <key id="f4kc_JavaScriptConsole" oncommand="f4kc_JavaScriptConsole();" key="-" modifiers="meta,alt" />
+    <key id="f4kc_JavaScriptConsoleWithTab" oncommand="f4kc_JavaScriptConsoleWithTab();" key="-" modifiers="accel,meta,alt" />
+    <key id="f4kc_NextTab" oncommand="f4kc_NextTab();" key="]" modifiers="meta,alt" />
+    <key id="f4kc_OpenHomepageNewTab" oncommand="f4kc_OpenHomepageNewTab();" key="b" modifiers="shift,meta,alt" />
+    <key id="f4kc_PageInfo" oncommand="f4kc_PageInfo();" key="=" modifiers="meta,alt" />
+    <key id="f4kc_PrevTab" oncommand="f4kc_PrevTab();" key="[" modifiers="meta,alt" />
+    <key id="f4kc_Reload" oncommand="f4kc_Reload(false);" key="r" modifiers="accel,meta,alt" />
+    <key id="f4kc_ReloadSkipCache" oncommand="f4kc_Reload(true);" key="r" modifiers="shift,meta,alt" />
+    <key id="f4kc_ReloadFocusedFrame" oncommand="f4kc_ReloadFocusedFrame();" key="f" modifiers="shift,meta,alt" />
+    <key id="f4kc_ReloadFocusedFrameOverrideCache" oncommand="f4kc_ReloadFocusedFrameOverrideCache();" key="f" modifiers="accel,meta,alt" />
+    <key id="f4kc_ScrollBottom" oncommand="f4kc_ScrollBottom();" key="g" modifiers="shift,meta,alt" />
+    <key id="f4kc_ScrollLeft" oncommand="f4kc_ScrollLeft();" key="h" modifiers="meta,alt" />
+    <key id="f4kc_ScrollLineDown" oncommand="f4kc_ScrollLineDown();" key="j" modifiers="meta,alt" />
+    <key id="f4kc_ScrollLineUp" oncommand="f4kc_ScrollLineUp();" key="k" modifiers="meta,alt" />
+    <key id="f4kc_ScrollPageDown" oncommand="f4kc_ScrollPageDown();" key=" " modifiers="meta,alt" />
+    <key id="f4kc_ScrollPageUp" oncommand="f4kc_ScrollPageUp();" key="b" modifiers="meta,alt" />
+    <key id="f4kc_ScrollRight" oncommand="f4kc_ScrollRight();" key="l" modifiers="meta,alt" />
+    <key id="f4kc_ScrollTop" oncommand="f4kc_ScrollTop();" key="g" modifiers="meta,alt" />
+    <key id="f4kc_Stop" oncommand="f4kc_Stop();" key="g" modifiers="accel,meta,alt" />
+    <key id="f4kc_ToggleCheckBox" oncommand="f4kc_ToggleCheckBox();" key="x" modifiers="meta,alt" />
+    <key id="f4kc_UpperDirectory" oncommand="f4kc_UpperDirectory();" key="d" modifiers="meta,alt" />
+    <key id="f4kc_ViewHistorySidebar" oncommand="f4kc_ViewHistorySidebar();" key="h" modifiers="shift,meta,alt" />
+    <key id="f4kc_ViewSelectedRegionSource" oncommand="f4kc_ViewSelectedRegionSource();" key="s" modifiers="meta,alt" />
+    <key id="f4kc_WebSearch" oncommand="f4kc_WebSearch();" key="0" modifiers="meta,alt" />
+  </keyset>
+  </window>
+</overlay>
